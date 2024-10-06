@@ -1,4 +1,4 @@
-import { EMAIL_URL } from "@/app/lib/constants";
+import { EMAIL_URL, GITHUB_URL, LINKEDIN_URL } from "@/lib/constants";
 
 export const Intro = () => {
   return (
@@ -6,18 +6,16 @@ export const Intro = () => {
       <div className="flex items-center gap-x-3">
         {/* Profile */}
         <div className="shrink-0">
-          <img
-            className="size-16 shrink-0 rounded-full"
-            src="https://images.unsplash.com/photo-1510706019500-d23a509eecd4?q=80&w=2667&auto=format&fit=facearea&facepad=3&w=320&h=320&q=80&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Avatar"
-          />
+          <img className="size-16 shrink-0 rounded-full" src="/adrian.png" alt="Avatar" />
         </div>
 
         <div className="grow">
           <h1 className="text-lg font-medium text-gray-800 dark:text-neutral-200">
             Adrian Delgado
           </h1>
-          <p className="text-sm text-gray-600 dark:text-neutral-400">Software Engineer</p>
+          <p className="text-sm text-gray-600 dark:text-neutral-400">
+            {"<"}Software Engineer {"/>"}
+          </p>
         </div>
       </div>
       {/*End Profile*/}
@@ -60,6 +58,22 @@ export const Intro = () => {
               href="#"
             >
               {EMAIL_URL}
+            </a>
+          </li>
+          <li className="flex items-center gap-x-2.5">
+            <a
+              className="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:decoration-2 focus:outline-none dark:text-neutral-500 dark:hover:text-neutral-400"
+              href={LINKEDIN_URL}
+            >
+              Adrian Delgado
+            </a>
+          </li>
+          <li className="flex items-center gap-x-2.5">
+            <a
+              className="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:decoration-2 focus:outline-none dark:text-neutral-500 dark:hover:text-neutral-400"
+              href={GITHUB_URL}
+            >
+              @adriandelgg
             </a>
           </li>
         </ul>
