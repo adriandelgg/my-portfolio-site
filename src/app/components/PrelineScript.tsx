@@ -1,26 +1,26 @@
 "use client";
+import type { IStaticMethods } from "preline/preline";
 
-import { usePathname } from "next/navigation";
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
-import { IStaticMethods } from "preline/preline";
 declare global {
   interface Window {
     HSStaticMethods: IStaticMethods;
   }
 }
 
-export default function PrelineScript() {
+export function PrelineScript() {
   const path = usePathname();
 
   useEffect(() => {
-    const loadPreline = async () => {
+    async function loadPreline() {
       await import("preline/preline");
 
       window.HSStaticMethods.autoInit();
-    };
+    }
 
-    loadPreline();
+    void loadPreline();
   }, [path]);
 
   return null;

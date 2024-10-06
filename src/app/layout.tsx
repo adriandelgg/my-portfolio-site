@@ -1,9 +1,7 @@
+import "./globals.css";
 import type { ReactNode } from "react";
 import type { Metadata } from "next";
-import "./globals.css";
-import PrelineScript from "@/app/components/PrelineScript";
-
-
+import { PrelineScript } from "@/app/components/PrelineScript";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -12,13 +10,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: ReactNode;
-}>) {
+}: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
-      <body
-      >
+      <body>
         {children}
         <PrelineScript />
       </body>
