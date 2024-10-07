@@ -4,7 +4,7 @@ import { Footer } from "@/components/footer/Footer";
 
 export default function Home() {
   return (
-    <main>
+    <main className="container mx-auto max-w-screen-md">
       <Intro />
       <WorkExperience />
       <Footer />

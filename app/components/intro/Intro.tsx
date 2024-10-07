@@ -1,4 +1,7 @@
 import { EMAIL_URL, GITHUB_URL, LINKEDIN_URL } from "@/lib/constants";
+import { MdOutlineEmail } from "react-icons/md";
+import { FiGithub } from "react-icons/fi";
+import { FaLinkedinIn } from "react-icons/fa";
 
 export const Intro = () => {
   return (
@@ -38,40 +41,32 @@ export const Intro = () => {
 
         <ul className="mt-5 flex flex-col gap-y-3">
           <li className="flex items-center gap-x-2.5">
-            <svg
-              className="size-3.5 shrink-0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              <rect width="20" height="16" x="2" y="4" rx="2" />
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-            </svg>
+            <MdOutlineEmail />
             <a
               className="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:decoration-2 focus:outline-none dark:text-neutral-500 dark:hover:text-neutral-400"
-              href="#"
+              href={`mailto:${EMAIL_URL}`}
             >
               {EMAIL_URL}
             </a>
           </li>
           <li className="flex items-center gap-x-2.5">
+            <FaLinkedinIn />
             <a
               className="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:decoration-2 focus:outline-none dark:text-neutral-500 dark:hover:text-neutral-400"
               href={LINKEDIN_URL}
+              target="_blank"
+              rel="noreferrer noopener"
             >
               Adrian Delgado
             </a>
           </li>
           <li className="flex items-center gap-x-2.5">
+            <FiGithub />
             <a
               className="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:decoration-2 focus:outline-none dark:text-neutral-500 dark:hover:text-neutral-400"
               href={GITHUB_URL}
+              target="_blank"
+              rel="noreferrer noopener"
             >
               @adriandelgg
             </a>

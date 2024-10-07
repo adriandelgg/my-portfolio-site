@@ -1,6 +1,7 @@
 export const WorkExperience = () => {
   return (
-    <div>
+    <section>
+      <h2>Work Experience</h2>
       {/* Item */}
       <div className="group relative flex gap-x-5">
         {/* Icon */}
@@ -171,6 +172,6 @@ export const WorkExperience = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
