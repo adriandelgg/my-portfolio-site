@@ -1,7 +1,9 @@
+import { RxCodesandboxLogo } from "react-icons/rx";
+
 export const WorkExperience = () => {
   return (
     <section>
-      <h2>Work Experience</h2>
+      <h2 className="text-2xl dark:text-white">Work Experience</h2>
       {/* Item */}
       <div className="group relative flex gap-x-5">
         {/* Icon */}
@@ -22,10 +24,7 @@ export const WorkExperience = () => {
             Full-Stack Software Engineer & Blockchain Developer @ bp
           </p>
 
-          <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
-            The company has high expectations and using OKRs there is a mutual
-            understanding of expectations and performance.
-          </p>
+          <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400"></p>
 
           <ul className="ms-6 mt-3 list-disc space-y-1.5">
             <li className="ps-1 text-sm text-gray-600 dark:text-neutral-400">
@@ -80,12 +79,7 @@ export const WorkExperience = () => {
             Full-Stack Software Engineer @ SwagCheck, Inc.
           </p>
 
-          <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400">
-            This is an excellent company and they reward their employees. It's becoming a
-            big company but it's still private, so the culture is as good as it gets at
-            1,000+ employees if you ask me. Managers are still adapting to the growth I
-            think, but everyone has to. Great place to work.
-          </p>
+          <p className="mt-1 text-sm text-gray-600 dark:text-neutral-400"></p>
 
           <ul className="ms-6 mt-3 list-disc space-y-1.5">
             <li className="ps-1 text-sm text-gray-600 dark:text-neutral-400">
@@ -113,24 +107,8 @@ export const WorkExperience = () => {
 
       <div className="group relative flex gap-x-5">
         <div className="relative after:absolute after:bottom-2 after:start-3 after:top-8 after:w-px after:-translate-x-[0.5px] after:bg-gray-200 group-last:after:hidden dark:after:bg-neutral-700">
-          <div className="relative z-10 flex size-6 items-center justify-center">
-            <svg
-              className="size-6 shrink-0 text-gray-800 dark:text-neutral-200"
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M12 12h.01" />
-              <path d="M16 6V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
-              <path d="M22 13a18.15 18.15 0 0 1-20 0" />
-              <rect width="20" height="14" x="2" y="6" rx="2" />
-            </svg>
+          <div className="relative z-10 flex size-7 items-center justify-center">
+            <RxCodesandboxLogo />
           </div>
         </div>
 

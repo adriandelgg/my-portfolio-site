@@ -41,15 +41,6 @@ export const Intro = () => {
 
         <ul className="mt-5 flex flex-col gap-y-3">
           <li className="flex items-center gap-x-2.5">
-            <MdOutlineEmail />
-            <a
-              className="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:decoration-2 focus:outline-none dark:text-neutral-500 dark:hover:text-neutral-400"
-              href={`mailto:${EMAIL_URL}`}
-            >
-              {EMAIL_URL}
-            </a>
-          </li>
-          <li className="flex items-center gap-x-2.5">
             <FaLinkedinIn />
             <a
               className="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:decoration-2 focus:outline-none dark:text-neutral-500 dark:hover:text-neutral-400"
@@ -69,6 +60,15 @@ export const Intro = () => {
               rel="noreferrer noopener"
             >
               @adriandelgg
+            </a>
+          </li>
+          <li className="flex items-center gap-x-2.5">
+            <MdOutlineEmail />
+            <a
+              className="text-[13px] text-gray-500 underline hover:text-gray-800 hover:decoration-2 focus:decoration-2 focus:outline-none dark:text-neutral-500 dark:hover:text-neutral-400"
+              href={`mailto:${EMAIL_URL}`}
+            >
+              {EMAIL_URL}
             </a>
           </li>
         </ul>
